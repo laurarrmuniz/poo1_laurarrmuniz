@@ -24,7 +24,6 @@ A soma de (1,2) com (3,4) é (4,6)
 ````
 - Crie um procedimento idêntico ao exercício anterior, mas que agora retorne void e coloque o resultado
 da soma no terceiro argumento da função (usar método estático).
-
 ````{verbatim}
 Exemplo de saída:
 Digite o valor de x1: 1

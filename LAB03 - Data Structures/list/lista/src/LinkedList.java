@@ -1,17 +1,24 @@
 public class LinkedList
 {
-    private No begin, end;
+    private No inicio, fim;
     private int size;
 
     public LinkedList()
     {
-       begin = null;
-       end = null;
+       inicio = null;
+       fim = null;
        size = 0;
     }
 
-    public void push_front(int elem)
+    public int getSize() {
+        return this.size;
+    }
+
+    public void push_front(int elemento)
     {
+        No celula = new No(elemento);
+        this.inicio = celula;
+        this.size++;
 
     }
 }

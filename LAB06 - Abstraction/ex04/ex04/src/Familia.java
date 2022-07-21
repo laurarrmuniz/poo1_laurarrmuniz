@@ -9,8 +9,8 @@ public class Familia extends Contato
     }
 
     @Override
-    public void imprimeContato() {
-        super.imprimeBasico();
-        System.out.println("Parentesco: " + this.parentesco);
+    public String imprimeContato() {
+
+        return  super.imprimeBasico() + "Parentesco: " + this.parentesco + "\n";
     }
 }

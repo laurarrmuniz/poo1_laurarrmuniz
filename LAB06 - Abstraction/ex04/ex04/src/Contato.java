@@ -12,12 +12,12 @@ public abstract class Contato
 
     }
 
-    public void imprimeBasico(){
-        System.out.println("Apelido: " +this. apelido);
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Email: " + this.email);
-        System.out.println("Aniversário: " + this.aniversario);
+    public String imprimeBasico(){
+        return "Apelido: " +this. apelido +
+                "\nNome: " + this.nome+
+                "\nEmail: " + this.email+
+                "\nAniversário: " + this.aniversario + "\n";
     }
 
-    public abstract void imprimeContato();
+    public abstract String imprimeContato();
 }

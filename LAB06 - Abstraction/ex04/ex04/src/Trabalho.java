@@ -9,8 +9,7 @@ public class Trabalho extends Contato
     }
 
     @Override
-    public void imprimeContato() {
-        super.imprimeBasico();
-        System.out.println("Tipo: " + this.tipo);
+    public String imprimeContato() {
+        return super.imprimeBasico() + "Tipo: " + this.tipo + "\n";
     }
 }

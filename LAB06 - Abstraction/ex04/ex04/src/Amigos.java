@@ -9,8 +9,7 @@ public class Amigos extends Contato
 
 
     @Override
-    public void imprimeContato() {
-        super.imprimeBasico();
-        System.out.println("Grau de amizade: " + this.grau);
+    public String imprimeContato() {
+        return super.imprimeBasico() + "Grau de amizade: " + this.grau + "\n";
     }
 }

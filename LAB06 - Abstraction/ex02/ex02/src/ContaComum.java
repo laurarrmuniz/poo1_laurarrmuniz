@@ -1,6 +1,10 @@
 public class ContaComum extends ContaCorrente{
-    public ContaComum(float val, int num, int pwd) {
+
+    public float limite;
+    public ContaComum(float val, int num, int pwd, float limite) {
         super(val, num, pwd);
+        this.limite = limite;
+
     }
 
     @Override

@@ -1,6 +1,10 @@
-public class Cliente implements Classificavel {
+public class Cliente  implements Classificavel {
 
     private String nome;
+
+    public Cliente(String nome) {
+        this.nome = nome;
+    }
 
     public String getNome() {
         return nome;
@@ -10,22 +14,16 @@ public class Cliente implements Classificavel {
         this.nome = nome;
     }
 
-    public boolean eMenorQue(Classificavel obj2) {
-        if (this.nome == "Ana") {
+    public boolean eMenorQue(Classificavel obj){
+        Cliente compara = (Cliente) obj;
+        if (this.nome.compareTo(compara.nome) > 0){
             return true;
-        }
-        if (this.nome == "Maria"){
-            return true;
-        }
-        if (this.nome == "Beatriz"){
-            return true;
-        }
-        if(this.nome == "Carlos"){
-            return true;
-        }
-        else {
+        }else {
             return false;
         }
+    }
+    public void print_cliente(){
+        System.out.println("Nomes ordenados: " + nome);
     }
 }
 

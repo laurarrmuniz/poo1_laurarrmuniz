@@ -9,12 +9,15 @@ public class Circulo
 /*
     public Circulo(double raio) {
         this.raio = raio;
+        // check:<<<erro: observe que por esse construtor sua variável que armazena os pontos fica NULL>>>>
+
     }
 
     public Circulo(Ponto ponto, double raio) {
         this.ponto = ponto;
         this.raio = raio;
     }*/ //n consegui implementar os construtores
+// check:<<<erro: pq não? qual foi o problema?>>>>
 
     //Método para calcular a area
 
@@ -26,7 +29,7 @@ public class Circulo
 
     //Método estático para o perímetro
 
-    public static double perimetro(){
+    public static double perimetro(){// check:<<<erro: raio por paramerto>>>>
 
         double pi = 3.14;
         return 2 * pi * raio;

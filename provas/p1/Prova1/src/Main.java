@@ -8,8 +8,8 @@ public class Main
         Circulo circulo = new Circulo();
 
         System.out.print("Raio: ");
-        circulo.setRaio(entrada.nextDouble());
-
+        circulo.setRaio(entrada.nextDouble());// check:<<<erro: e o ponto central>>>>
+ 
         double areaCirculo = circulo.area();
         System.out.println("Area: " + areaCirculo);
 
@@ -17,7 +17,7 @@ public class Main
 
         System.out.println("Raio: ");
         circulo.setRaio(entrada.nextDouble());
-
+// check:<<<erro: estática>>>>
         double perimetroCirculo = circulo.perimetro();
         System.out.println("Perímetro: " + perimetroCirculo);
 
